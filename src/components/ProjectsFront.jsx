@@ -1,11 +1,9 @@
 import CardFront from "./CardFront";
-import ProjectCard from "./ProjectCard";
 const projects = [
   {
     title: "Intro component using react js and formik",
-    description:
-      "Clon de AirBnB, en la cual trabaje desarrollando parte del FrontEnd",
-    link: "https://www.youtube.com/watch?v=CK5NVuKSqEU",
+
+    link: "https://intro-component-wheat.vercel.app/",
     image:
       "https://github.com/veronicajujuy/intro-component/raw/main/imagenes/desktop.png",
     github: "https://github.com/veronicajujuy/intro-component",
@@ -15,8 +13,7 @@ const projects = [
   },
   {
     title: "Web Grover Groceries",
-    description:
-      "Clon de AirBnB, en la cual trabaje desarrollando parte del FrontEnd",
+
     link: "https://pagina-grover.vercel.app/",
     image:
       "https://github.com/veronicajujuy/pagina-grover/raw/main/pagina_grover.jpg",
@@ -27,8 +24,7 @@ const projects = [
   },
   {
     title: "Product Card Component",
-    description:
-      "Clon de AirBnB, en la cual trabaje desarrollando parte del FrontEnd",
+
     link: "https://product-card-component-six.vercel.app/",
     image:
       "https://github.com/veronicajujuy/product-card-component/raw/main/images/imagen-desktop.PNG",
@@ -39,9 +35,8 @@ const projects = [
   },
   {
     title: "Huddle landing page",
-    description:
-      "Clon de AirBnB, en la cual trabaje desarrollando parte del FrontEnd",
-    link: "https://product-card-component-six.vercel.app/",
+
+    link: "https://huddle-landing-page-two-silk.vercel.app/",
     image:
       "https://github.com/veronicajujuy/Huddle-Landing-Page/raw/main/images/image-laptop.png",
     github: "https://github.com/veronicajujuy/Huddle-Landing-Page",

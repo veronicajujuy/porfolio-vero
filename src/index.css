@@ -68,7 +68,7 @@ h1 {
 h2 {
   font-size: 1.75rem;
   color: #b4ccb9;
-  margin: 15px;
+  margin: 15px 0;
 }
 
 h3 {
@@ -199,6 +199,27 @@ link :visited {
 
 .navbar {
   display: flex;
-  flex-direction: row-reverse;
-  padding-right: 15%;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+.navbar-items {
+  display: flex;
+}
+
+.foto {
+  border-radius: 50%;
+  border: 2px solid #e84d5b;
+  width: 25%;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
+  margin: 10px;
+}
+
+.nombre {
+  color: #26979f;
+}
+.quote {
+  color: #e84d5b;
+  font-style: italic;
+  text-align: right;
 }

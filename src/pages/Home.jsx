@@ -4,11 +4,25 @@ function Home() {
   return (
     <section>
       <h1>Bienvenidos a mi Porfolio!!</h1>
+
       <h2>Sobre mí</h2>
+      <img src="vero.jpg" alt="foto-vero" className="foto" />
+      <div className="bienvenidos">
+        <div className="quote">
+          <p>
+            <strong>
+              "El mundo siempre parece más brillante cuando acabas de hacer algo
+              que antes no estaba allí"
+            </strong>
+          </p>
+          <p>Neil Gaiman</p>
+        </div>
+      </div>
       <div className="bienvenidos">
         <h3>
-          Mi nombre es Verónica Valdez, soy Desarrolladora Full Stack, Analista
-          Programadora Universitaria y Docente
+          Mi nombre es <span className="nombre"> Verónica Valdez</span>, soy
+          Desarrolladora Full Stack, Analista Programadora Universitaria y
+          Docente
         </h3>
         <p>
           Tengo mas de 5 años de experiencia en la enseñanza y es lo que hago
@@ -33,54 +47,80 @@ function Home() {
         </p>
         <p>
           Aca puedes encontrar diversos proyectos desarrollados, de frontend,
-          backend, y otras cosas!!
+          backend y algunas soluciones que tuve que implementar para mi trabajo,
+          investigando y desarrollando con tecnologías que nunca había
+          utilizado!!
         </p>
       </div>
       <h2>Soluciones Desarrolladas</h2>
       <div className="bienvenidos">
         <h3>
-          Problema: Mas de 100 repositorios de alumnos para chequear, y ver si
-          al menos cuentan con commits
+          Problema:
+          <em>
+            <span className="nombre">
+              "Los profesores de la academia en la que trabajo tenían
+              inconvenientes con el sistema de toma de asistencia online. Los
+              profesores tardaban demasiado tiempo en marcar manualmente la
+              asistencia y muchos tenían hasta hasta 5 grupos ( mas de 200
+              personas ) al mismo tiempo"
+            </span>
+          </em>
         </h3>
         <p>
-          Para chequear mas rápidamente los repositorios, desarrollé
-          <strong>Comprobando Repositorios</strong>, una herramienta
+          ✔️ Solución: Desarrollé una extensión de Chrome llamada
+          <strong> "Tomar Asistencia"</strong> diseñada para optimizar la
+          gestión de la asistencia en el sistema de mi empresa. Esta
+          herramienta, que actualmente está disponible en la Chrome Web Store,
+          automatiza el proceso de marcar la presencia de los estudiantes,
+          ahorrando tiempo y reduciendo errores. Utilicé herramientas y técnicas
+          de web scraping para automatizar la recolección y análisis de datos de
+          asistencia. Desarrollé un sistema de filtrado para identificar y
+          resaltar automáticamente los correos electrónicos de los estudiantes
+          presentes, simplificando la tarea de marcar la asistencia.
+        </p>
+        <h3>
+          Problema:
+          <em>
+            <span className="nombre">
+              "En una de las materias que dicté hace un par de años, era
+              necesario revisar los repositorios de los los alumnos. Este
+              trabajo se realizaba de manera manual y requeria chequear que los
+              repositorios existieran y tuviesen commits. Tomaba casi 4 horas de
+              revision por grupo de estudiantes, generalmente hasta 100
+              repositorios revisados uno por uno."
+            </span>
+          </em>
+        </h3>
+        <p>
+          ✔️ Solución: Para chequear mas rápidamente los repositorios,
+          desarrollé
+          <strong> "Comprobando Repositorios" </strong>, una herramienta
           automatizada para verificar el estado de los repositorios de GitHub de
           estudiantes, la cual está desplegada en AWS Lightsail. La misma
           permite cargar una lista .csv y chequea si el repositorio existe,
-          cuantos commits tiene y lista las branches
-        </p>
-        <h3>
-          Problema: El sistema para tomar asistencia tiene botones para chequear
-          si el alumno esta presente o no. Tuve 5 o mas grupos a la vez, y tenia
-          que ponerles presente todos los días.
-        </h3>
-        <p>
-          Para ello creé una extensión de Chrome llamada{" "}
-          <strong> Tomar Asistencia </strong>, que facilita la gestión de
-          asistencia en el sistema de mi empresa y está disponible en la Chrome
-          Web Store. Use técnicas de web scraping para poner subir el listado
-          que brinda zoom, y valiendome de las herramientas que proporciona
-          chrome, filtrar los estudiantes por mails y pintar aquellos que estan
-          presentes, lo que facilita pinchar la casilla de asistencia.
+          cuantos commits tiene y lista las branches. Luego se puede descargar
+          en .csv el listado chequeado. Con esta solucion se logró optimizar el
+          tiempo de los profesores, a 5 minutos de revision por grupo.
         </p>
       </div>
       <h2>Tecnologias con las que trabajo</h2>
       <div className="bienvenidos">
-        <ol>
+        <ul>
           <li>
             Lenguajes y Frameworks: Java, Spring Boot, Spring Security, React,
-            Redux, JavaScript, HTML, CSS, Node.js
+            JavaScript, HTML, CSS, Node.js
           </li>
-          <li>Bases de Datos: MySQL</li>
-          <li>Despliegue: AWS Lightsail, Railway</li>
+          <li>Bases de Datos: MySQL, Oracle, PostgreSQL</li>
+          <li>Despliegue: AWS Lightsail, Railway, Vercel</li>
           <li>
-            Herramientas y Otros: GitHub API, Chrome Extensions, Bootstrap,
-            React Router
+            Herramientas y Otros: GitHub API, Chrome Extensions, Git, Linux,
+            Docker
           </li>
-        </ol>
+        </ul>
       </div>
-      <Link to="/projects">Ver mis proyectos</Link>
+      <h3>
+        <Link to="/projects">Ver mis proyectos</Link>
+      </h3>
     </section>
   );
 }

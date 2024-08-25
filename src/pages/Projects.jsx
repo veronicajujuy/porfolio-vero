@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import ProjectCard from "../components/ProjectCard";
 import ProjectsFront from "../components/ProjectsFront";
 
 function Projects() {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll a la parte superior de la página
+  }, []);
   const projects = [
     {
       title: "Air Stay",
@@ -69,7 +73,7 @@ function Projects() {
         </div>
       </section>
       <section>
-        <h1>Proyectos de FrontEnd</h1>
+        <h2>Proyectos de FrontEnd - Maquetacion con HTML y CSS</h2>
         <ProjectsFront />
       </section>
     </>

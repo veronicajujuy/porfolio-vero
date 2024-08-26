@@ -223,3 +223,28 @@ link :visited {
   font-style: italic;
   text-align: right;
 }
+
+@media screen and (max-width: 1024px) {
+  .bienvenidos {
+    text-align: left;
+    font-size: 0.75rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+  section {
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project-card,
+  .project-card2 {
+    width: 80%;
+  }
+}

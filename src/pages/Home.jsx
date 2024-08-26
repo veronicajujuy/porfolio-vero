@@ -58,11 +58,10 @@ function Home() {
           Problema:
           <em>
             <span className="nombre">
-              "Los profesores de la academia en la que trabajo tenían
-              inconvenientes con el sistema de toma de asistencia online. Los
-              profesores tardaban demasiado tiempo en marcar manualmente la
-              asistencia y muchos tenían hasta hasta 5 grupos ( mas de 200
-              personas ) al mismo tiempo"
+              "Los profesores tenían inconvenientes con el sistema de toma de
+              asistencia online, tardaban demasiado tiempo en marcar manualmente
+              la asistencia y además varios tenían hasta hasta 5 grupos ( mas de
+              200 personas ) al mismo tiempo"
             </span>
           </em>
         </h3>
